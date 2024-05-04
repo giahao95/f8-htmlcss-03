@@ -49,6 +49,7 @@ a {
   top: -22px;
   background-color: var(--secondary-color);
   padding-top: 22px;
+  z-index: 9;
 }
 
 .header .row {
@@ -303,4 +304,125 @@ a {
 .services__info .btn {
   margin-top: 55px;
   padding: 15px 48px;
+}
+
+/* ===== Works ===== */
+.works {
+  padding: 100px 0;
+  background-color: #f6fbff;
+}
+
+.works__title {
+  color: var(--secondary-color);
+  font-size: 5rem;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -1px;
+}
+
+.works__desc {
+  width: 42%;
+  margin-top: 18px;
+  color: var(--paragraph-text-color);
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 1.66;
+}
+
+.works__list {
+  margin-top: 86px;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.works__list .item {
+  padding: 43px 42px;
+  border: 14px solid #eaf6ff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.works__list .item__title {
+  margin-top: 18px;
+  color: var(--secondary-color);
+  font-size: 2.6rem;
+  font-weight: 600;
+  line-height: 1.38;
+}
+
+.works__list .item__desc {
+  margin-top: 28px;
+  color: var(--paragraph-text-color);
+  font-weight: 300;
+  line-height: 1.75;
+}
+
+.works__list .item__link {
+  display: inline-block;
+  margin-top: 18px;
+  font-weight: 300;
+  color: var(--paragraph-text-color);
+}
+
+.works__list .item:hover {
+  transform: translateY(-16px);
+  border-color: var(--primary-color);
+}
+
+.works__list .item:hover .item__link {
+  color: var(--primary-color);
+  font-weight: 400;
+}
+
+/* ===== About ===== */
+.about {
+  margin-top: 170px;
+}
+
+.about__img {
+  position: relative;
+}
+
+.about__img--left {
+  width: 512px;
+  height: 370px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.about__img--right {
+  position: absolute;
+  top: 32%;
+  right: -11.2%;
+  width: 332px;
+  height: 370px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.about .content {
+  width: 40%;
+  margin-left: auto;
+}
+
+.about .content__title {
+  color: var(--secondary-color);
+  font-size: 5rem;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -1px;
+}
+
+.about .content__desc {
+  margin-top: 18px;
+  color: var(--paragraph-text-color);
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 1.66;
+}
+
+.about .content__btn {
+  margin-top: 38px;
+  padding: 15px 51px;
 }
