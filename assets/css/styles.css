@@ -59,7 +59,7 @@ a {
 .logo {
   position: relative;
   display: flex;
-  gap: 6px;
+  gap: 0.6em;
   font-size: 1rem;
 }
 
@@ -71,17 +71,17 @@ a {
 }
 
 .logo__circle::before {
-  width: 30px;
-  height: 30px;
+  width: 3em;
+  height: 3em;
   background-color: var(--primary-color);
 }
 
 .logo__circle::after {
   position: absolute;
-  bottom: 5px;
-  left: 11px;
-  width: 16px;
-  height: 16px;
+  bottom: 0.5em;
+  left: 1.1em;
+  width: 1.6em;
+  height: 1.6em;
   background-color: #fff;
 }
 
@@ -215,4 +215,92 @@ a {
   margin-left: -6px;
   object-fit: cover;
   border-radius: 0 6px 6px 0;
+}
+
+/* ===== Services ===== */
+.services {
+  margin: 170px 0;
+}
+
+.services__title {
+  color: var(--secondary-color);
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -1px;
+}
+
+.services__desc {
+  width: 468px;
+  margin: 18px auto 0;
+  color: var(--paragraph-text-color);
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 1.66;
+}
+
+.services__info {
+  margin-top: 70px;
+  gap: 130px;
+}
+
+.services__info .info__img {
+  width: 570px;
+  height: 570px;
+  border-radius: 12px;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.services__info .info__item {
+  padding: 20px 0 18px 22px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.services__info .info__item.row {
+  align-items: flex-start;
+  gap: 19px;
+}
+
+.services__info .info__item .fa-tooth {
+  /* flex-shrink: 0; */
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--secondary-color);
+  line-height: 58px;
+  border-radius: 50%;
+  background-color: #eff6fd;
+}
+
+.services__info .info__item:hover {
+  box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.05);
+}
+
+.services__info .info__item:hover .fa-tooth {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.services__info .item__title {
+  color: var(--secondary-color);
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.services__info .item__desc {
+  margin-top: 8px;
+  color: var(--paragraph-text-color);
+  font-weight: 300;
+  line-height: 1.75;
+}
+
+.services__info .btn {
+  margin-top: 55px;
+  padding: 15px 48px;
 }
