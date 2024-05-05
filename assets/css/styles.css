@@ -29,7 +29,7 @@ a {
 
 .container {
   width: 1170px;
-  max-width: calc(1170px - 48px);
+  max-width: calc(100vw - 48px);
   margin: 0 auto;
 }
 
@@ -425,4 +425,190 @@ a {
 .about .content__btn {
   margin-top: 38px;
   padding: 15px 51px;
+}
+
+/* ===== Team ===== */
+.team {
+  margin-top: 291px;
+}
+
+.team__title {
+  color: var(--secondary-color);
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -1px;
+}
+
+.team__btn {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 38px;
+  padding: 15px 26px;
+}
+
+.team__list {
+  margin-top: 70px;
+  gap: 30px;
+  overflow: hidden;
+}
+
+.team__list .item {
+  width: calc(25% - 22.5px);
+  flex-shrink: 0;
+}
+
+.team__list figure {
+  width: 100%;
+  height: 318px;
+  background-color: #eaf6ff;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.team__list .item__img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.team__list .item__name {
+  margin-top: 12px;
+  color: var(--secondary-color);
+  text-align: center;
+  font-weight: 400;
+  line-height: 1.75;
+}
+
+.team__list .item__school {
+  color: var(--paragraph-text-color);
+  font-family: Sora;
+  font-size: 1.4rem;
+  text-align: center;
+  font-weight: 300;
+  line-height: 1.85;
+}
+
+.team__list .item__img-1 {
+  height: 170%;
+  object-position: -155px -15px;
+}
+
+.team__list .item__img-2 {
+  height: 130%;
+  object-position: -190px 17px;
+}
+
+.team__list .item__img-3 {
+  height: 120%;
+  object-position: -170px 10px;
+}
+
+.team__list .item__img-4 {
+  height: 100%;
+  object-position: -70px 20px;
+}
+
+.team .direction {
+  margin-top: 38px;
+  text-align: center;
+}
+
+.direction__previous,
+.direction__next {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  font-size: 1.2rem;
+  font-weight: 300;
+  background-color: #fff;
+  color: var(--paragraph-text-color);
+  border: 1px solid var(--paragraph-text-color);
+  border-radius: 50%;
+  line-height: 35px;
+  cursor: pointer;
+}
+
+.direction__previous:hover,
+.direction__next:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+  border-color: var(--primary-color);
+}
+
+.direction__next {
+  margin-left: 18px;
+}
+
+/* ===== CTA ===== */
+.cta {
+  margin-top: 265px;
+}
+
+.cta .container {
+  position: relative;
+  height: 427px;
+  padding: 75px 70px;
+  border-radius: 4px;
+  background-color: var(--primary-color);
+}
+
+.cta__img {
+  position: absolute;
+  bottom: 0;
+}
+
+.cta .content {
+  max-width: 59%;
+  margin-left: auto;
+  color: #fff;
+}
+
+.cta .content__title {
+  font-size: 5rem;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -1px;
+}
+
+.cta .content__desc {
+  margin-top: 18px;
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 1.66;
+}
+
+.cta .app {
+  margin-top: 38px;
+}
+
+.cta .app__android,
+.cta .app__ios {
+  gap: 7px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+
+.cta .app__android .fa-brands,
+.cta .app__ios .fa-brands {
+  font-size: 2rem;
+}
+
+.cta .app__android p:first-child,
+.cta .app__ios p:first-child {
+  font-size: 0.8rem;
+  line-height: 1.3;
+}
+
+.cta .app__android p:last-child,
+.cta .app__ios p:last-child {
+  font-size: 1.4rem;
+}
+
+.cta .app__ios {
+  margin-left: 28px;
 }
